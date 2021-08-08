@@ -35,15 +35,30 @@ div#div-button div#button-container{
     width: 40%;
 }
 
+
+
 @media(max-width: 1080px) {
     div#projectsCard-container{
         display: block;
-        width: 90%;
+        width: 60%;
+        margin: 0 auto 2rem auto;
     
-        margin-bottom: 1rem;
     }
 
     div#div-button div#button-container{
-        width: 55%;
+        width: 30%;
     }
 }
+
+@media(max-width: 700px) {
+    div#projectsCard-container{
+        display: block;
+        width: 90%;
+        margin: 0 auto 2rem auto;
+    
+    }
+
+    div#div-button div#button-container{
+        width: 45%;
+    }
+}   

@@ -1,9 +1,13 @@
 div#header-container{
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     padding: 1.3rem 2.5rem;
 
     background: var(--Grey-400);
+
+
 }
 
 h1{
@@ -37,26 +41,44 @@ img#main-icon{
 }
 
 @media(max-width: 1080px) {
+    img#main-icon{
+        display: none;
+    }
+    nav#main-desktop li{
+        display: inline-block;
+        list-style: none;
+        margin: auto 0.7rem;
+    
+        font-size: 1rem;
+    
+        cursor: pointer;
+    }
+}
+
+@media(max-width: 700px) {
     div#header-container{
         padding: 1rem 1.5rem;
         height: 100px;
     }
     img#main-icon{
         display: block;
-        width: 10%;
+        width: 9%;
         height: 50%;
     }
     nav#main-mobile{
-        width: 100%;
-        margin: 0 5px;
+        width: 50%;
+
         display: flex;
         flex-direction: column;
+
+        position: absolute;
+        right: 0%;
+
         list-style: none;
+        background: var(--Grey-800);
 
-        background: black;
-
-        justify-content: right;
     }
+
     nav#main-mobile li{
         text-align: right;
         margin: 4rem 2rem;

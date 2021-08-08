@@ -50,6 +50,40 @@ div#sobreMim-container section div.button-div-sobremim a{
         display: block;
         width: 100%;
 
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    div#sobreMim-container section div.button-div-sobremim a{
+        display: flex;
+        margin: 20px auto;
+        width: 70%;
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media(max-width: 700px) {
+    div#sobreMim-container img#image-sobre-mim{
+        display: none;
+    }
+
+    div#sobreMim-container section {
+        padding: 30px 0;
+        width: 100%;
+    }
+
+    div#sobreMim-container section div#button-container{
+        margin: 0;
+    }
+
+    div#sobreMim-container section div.button-div-sobremim{
+        display: block;
+        width: 100%;
+
         margin-top: 20px;
         align-items: center;
         justify-content: center;
@@ -57,9 +91,11 @@ div#sobreMim-container section div.button-div-sobremim a{
     }
 
     div#sobreMim-container section div.button-div-sobremim a{
-        display: block;
-        margin-top: 20px;
+        display: flex;
+        margin: 20px auto;
 
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
-
