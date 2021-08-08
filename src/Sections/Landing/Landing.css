@@ -73,8 +73,9 @@ a{
         padding-bottom: 50px;
     }
 
-    span{
+    span#span-animation{
         padding: 2.5rem 0;
+        margin-top: 5rem;
     
         font-size: 1.1rem;
     }
