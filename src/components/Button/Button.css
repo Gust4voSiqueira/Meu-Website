@@ -1,0 +1,32 @@
+div#button-container{
+    background: var(--color-button);
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0.6rem 1.5rem;
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+div#button-container:hover {
+    background: var(--color-button-hover);
+}
+
+div#button-container img{
+    display: inline-block;
+    width: 15%;
+    margin: auto 0;
+
+    background: var(--color-button);
+    color: white;
+}
+
+div#button-container p{
+    display: inline-block;
+    margin: 0 10px;
+}

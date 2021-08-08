@@ -1,0 +1,49 @@
+div#projectsCard-container{
+    display: inline-block;
+    background: var(--Grey-400);
+    width: 30%;
+
+    padding: 2rem 1.7rem;
+    margin: 0 1rem;
+}
+
+span.category{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+p.text-projects{
+    display: block;
+    margin: 1.4rem 0;
+}
+
+span.technologies{
+    background: var(--Grey-800);
+    padding: 0.7rem 1rem;
+    margin: 0px 5px 10px 0px;
+    border-radius: 8px;
+}
+div#div-button{
+    margin: 1.5rem 0;
+}
+div#div-button img{
+    width: 20%;
+}
+
+div#div-button div#button-container{
+    width: 40%;
+}
+
+@media(max-width: 1080px) {
+    div#projectsCard-container{
+        display: block;
+        width: 90%;
+    
+        margin-bottom: 1rem;
+    }
+
+    div#div-button div#button-container{
+        width: 55%;
+    }
+}

@@ -1,0 +1,64 @@
+div#conhecimentos-container{
+    display: flex;
+    justify-content: space-between;
+
+    background: var(--Grey-400);
+
+    padding: 3.5rem 1rem;
+}
+
+div#conhecimentos-container h1{
+    display: block;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+section#text{
+    width: 50%;
+    margin: 1rem 1rem;
+}
+
+
+section#text p{
+    display: block;
+    margin-bottom: 20px;
+    line-height: 35px;
+}
+
+section#cards{
+    display: block;
+    margin: 0 1rem;
+}
+
+div#conhecimentosCard-container{
+    display: inline-flex;
+    justify-content: center;
+    width: 20%;
+    height: 150px;
+
+    background: var(--Grey-800);
+    border-radius: 10px;
+    margin: 1rem 1rem;
+}
+div#conhecimentosCard-container:hover{
+    background:#0e0e14;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+div#conhecimentosCard-container img{
+    margin: 2.3rem auto;
+    width: 60%;
+}
+
+@media(max-width: 1080px) {
+    div#conhecimentos-container{
+        display:block;
+    }
+    
+    div#conhecimentosCard-container{
+        width: 30%;
+    }
+    section#text p#message-cursor{
+        display: none;
+    }
+}

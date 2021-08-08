@@ -1,0 +1,65 @@
+div#sobreMim-container{
+    display: flex;
+    justify-content: space-between;
+
+    line-height: 35px;
+    background: var(--Grey-400);
+    padding: 2rem 0;
+}
+div#sobreMim-container section span{
+    font-size: 1.1rem;
+}
+
+div#sobreMim-container section {
+    padding: 30px 0;
+    width: 45%;
+}
+
+div#sobreMim-container img#image-sobre-mim{
+    margin: auto;
+    width: 26%;
+
+    border-radius: 500px;
+}
+
+div#sobreMim-container section div.button-div-sobremim{
+    display: flex;
+    justify-content: space-between;
+}
+
+div#sobreMim-container section div.button-div-sobremim a{
+    display: block;
+    width: 100%;
+}
+
+@media(max-width: 1080px) {
+    div#sobreMim-container img#image-sobre-mim{
+        display: none;
+    }
+
+    div#sobreMim-container section {
+        padding: 30px 0;
+        width: 100%;
+    }
+
+    div#sobreMim-container section div#button-container{
+        margin: 0;
+    }
+
+    div#sobreMim-container section div.button-div-sobremim{
+        display: block;
+        width: 100%;
+
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    div#sobreMim-container section div.button-div-sobremim a{
+        display: block;
+        margin-top: 20px;
+
+    }
+}
+

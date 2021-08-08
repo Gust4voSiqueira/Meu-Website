@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Grey-400: #202020;
+    --Grey-800: #181818;
+    --color-button: #6610f2;
+    --color-button-hover: #510fbb;
+}
+body{
+    font-family: "Fira Code", "Montserrat", 'san-serif';
+    color: #fff;
+
+    font-size: 16px;
+}

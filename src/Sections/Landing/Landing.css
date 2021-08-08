@@ -1,0 +1,68 @@
+div#landing-container{
+    display: flex;
+    justify-content: space-between;
+
+    background: var(--Grey-800);
+}
+
+img#capa-image{
+    position: relative;
+    width: 45%;
+    margin-bottom: 5rem;
+}
+
+
+section{
+    margin: auto 3rem;
+}
+
+span{
+    display: inline-block;
+    margin: auto 0;
+    padding: 2.5rem 0;
+
+    font-size: 1.2rem;
+}
+
+span h1{
+    font-size: 2rem;
+}
+
+div.div-button{
+    margin: 0;
+}
+
+div.div-button div#button-container{
+    width: 33%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media(max-width: 1080px) {
+    img#capa-image{
+        display: none;
+    }
+
+    div#landing-container{
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    span{
+        padding: 2.5rem 0;
+    
+        font-size: 1.1rem;
+    }
+
+    span h1{
+        font-size: 1.5rem;
+    }
+
+    div.div-button div#button-container{
+        width: 50%;
+    }
+    
+}
