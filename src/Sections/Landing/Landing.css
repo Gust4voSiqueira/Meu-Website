@@ -57,6 +57,7 @@ a{
 }
 
 @media(max-width: 1080px) {
+
     div.div-button div#button-container{
         width: 70%;
     }
@@ -64,6 +65,7 @@ a{
 }
 
 @media(max-width: 700px) {
+
     img#capa-image{
         display: none;
     }
@@ -86,5 +88,8 @@ a{
 
     div.div-button div#button-container{
         width: 50%;
+    }
+    section{
+        margin: auto 0.5rem;
     }
 }
