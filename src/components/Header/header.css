@@ -62,11 +62,12 @@ img#main-icon{
     }
     img#main-icon{
         display: block;
-        width: 9%;
+        width: 7%;
         height: 50%;
     }
     nav#main-mobile{
-        width: 50%;
+        width: 60%;
+        height: 100vh;
 
         display: flex;
         flex-direction: column;
@@ -76,13 +77,13 @@ img#main-icon{
         margin-top:6.5rem;
 
         list-style: none;
-        background: var(--Grey-800);
+        background: var(--Grey-400);
 
     }
 
     nav#main-mobile li{
         text-align: right;
-        margin: 4rem 2rem;
+        margin: 3rem 2rem;
     }
     nav#main-desktop{
         display: none;
