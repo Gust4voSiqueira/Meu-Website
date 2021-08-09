@@ -43,11 +43,13 @@ span h1{
     font-size: 2rem;
 }
 
-div.div-button{
+a.a-button{
     margin: 0;
+    padding: 0;
+
 }
 
-div.div-button div#button-container{
+a.a-button div#button-container{
     width: 33%;
 }
 
@@ -58,7 +60,7 @@ a{
 
 @media(max-width: 1080px) {
 
-    div.div-button div#button-container{
+    a.a-button div#button-container{
         width: 70%;
     }
     
@@ -71,8 +73,14 @@ a{
     }
 
     div#landing-container{
-        display: block;
-        padding-bottom: 50px;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        width: 100vw;
+        height: 100vh;
     }
 
     span#span-animation{
@@ -86,8 +94,9 @@ a{
         font-size: 1.5rem;
     }
 
-    div.div-button div#button-container{
+    a.a-button div#button-container{
         width: 50%;
+        margin: 0 auto;
     }
     section{
         margin: auto 1rem;
