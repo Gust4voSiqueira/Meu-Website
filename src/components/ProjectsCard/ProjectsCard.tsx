@@ -17,7 +17,7 @@ export function ProjectsCard({ title, description, tecnologies, website, link }:
             <h1>{title}</h1>
             <p className='text-projects'>{description}</p>
 
-            <div id='div-button'><a href={link}><Button image={LinkIcon} title={website ? "Website" : "Github"} /></a></div>
+            <div id='div-button'><a target="_blank" href={link}><Button image={LinkIcon} title={website ? "Website" : "Github"} /></a></div>
 
             {tecnologies.map((tecnologies) => {
                 return <span className='technologies'>{tecnologies}</span>
