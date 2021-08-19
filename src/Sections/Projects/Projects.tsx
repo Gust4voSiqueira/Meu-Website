@@ -7,7 +7,7 @@ const databaseProducts = [
         description: 'O Burger Lets é um projeto desenvolvido para uma hamburgueria da minha cidade.',
         tecnologies: ['ReactJs', 'SpringBoot'],
         website: true,
-        link: 'https://github.com/Gust4voSiqueira'
+        link: 'https://burger-lets.vercel.app'
     },
     {
         title: 'Igreja IPCC',
