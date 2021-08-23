@@ -24,8 +24,8 @@ const databaseProducts = [
         link: 'https://github.com/Gust4voSiqueira/Tasks'
     },
     {
-        title: 'IgNews',
-        description: 'IgNews é um gerenciador de finanças desenvolvido durante o programa de aceleração de carreira (Ignite).',
+        title: 'dtMoney',
+        description: 'dtMoney é um gerenciador de finanças desenvolvido durante o programa de aceleração de carreira (Ignite).',
         tecnologies: ['ReactJs'],
         website: true,
         link: 'https://dt-money-gustavo.vercel.app'
