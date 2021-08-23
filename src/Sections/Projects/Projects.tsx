@@ -25,7 +25,7 @@ const databaseProducts = [
     },
     {
         title: 'IgNews',
-        description: 'IgNews é um gerenciador de finanças desenvolvido durante o programa de acelaração de carreira (Ignite).',
+        description: 'IgNews é um gerenciador de finanças desenvolvido durante o programa de aceleração de carreira (Ignite).',
         tecnologies: ['ReactJs'],
         website: true,
         link: 'https://dt-money-gustavo.vercel.app'
