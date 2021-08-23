@@ -13,8 +13,8 @@ const databaseProducts = [
         title: 'Igreja IPCC',
         description: 'O projeto Igreja IPCC é um website desenvolvido para a Igreja que eu frequento.',
         tecnologies: ['ReactJs', 'SpringBoot'],
-        website: false,
-        link: 'https://github.com/Gust4voSiqueira/Igreja-IPCC'
+        website: true,
+        link: 'https://igreja-ipcc.vercel.app'
     },
     {
         title: 'Tasks',
