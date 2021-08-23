@@ -23,6 +23,13 @@ const databaseProducts = [
         website: false,
         link: 'https://github.com/Gust4voSiqueira/Tasks'
     },
+    {
+        title: 'IgNews',
+        description: 'IgNews é um gerenciador de finanças desenvolvido durante o programa de acelaração de carreira (Ignite).',
+        tecnologies: ['ReactJs'],
+        website: true,
+        link: 'https://dt-money-gustavo.vercel.app'
+    },
 
 ]
 

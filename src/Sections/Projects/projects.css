@@ -2,7 +2,7 @@ div#projects-container{
     background: var(--Grey-800);
     padding-bottom: 4rem;
 
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
 }
