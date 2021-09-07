@@ -5,7 +5,7 @@ const databaseProducts = [
     {
         title: 'Burger Lets',
         description: 'O Burger Lets é um projeto desenvolvido para uma hamburgueria da minha cidade.',
-        tecnologies: ['ReactJs', 'SpringBoot'],
+        tecnologies: ['ReactJs', 'NodeJS'],
         website: true,
         link: 'https://burger-lets.vercel.app'
     },
