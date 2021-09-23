@@ -1,7 +1,5 @@
 import './header.css'
 
-import menu from '../../Assets/menu-icon.png'
-import close from '../../Assets/close-icon.png'
 
 import { useState } from 'react'
 
@@ -19,19 +17,13 @@ export function Header() {
                     <li><a href="#conhecimentos-container">Conhecimentos</a></li>
                     <li><a href="#contact-container">Contato</a></li>
                 </nav>
-                {main ? (
-                    <img id='main-icon' src={close} alt="" onClick={() => {
-                        setMain(!main)
-                    }} />
-                ) : (
-
-                    <img id='main-icon' src={menu} alt="" onClick={() => {
-                        setMain(!main)
-                    }} />
-                )}
-
             </div>
 
+            <div id="menu-mobile" onClick={() => setMain(!main)}>
+                <input type="checkbox" name="" id="check" />
+                <label htmlFor="check"></label>
+                <span id='main-mobile-barra'></span>
+            </div>
             {main && (
                 <nav id='main-mobile'>
                     <li><a href="#sobreMim-container">Sobre Mim</a></li>
