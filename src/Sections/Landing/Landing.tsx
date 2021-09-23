@@ -15,13 +15,12 @@ export function Landing() {
     const array = textoArray.split('')
 
     useEffect(() => {
-
         array.forEach((letra, i) => {
             setTimeout(function () {
                 document.getElementById("span-animation").innerHTML += letra
             }, 75 * i)
         })
-    },)
+    })
 
 
     return (

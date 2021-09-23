@@ -29,6 +29,7 @@ span#span-animation::after{
     animation: pisca .7s infinite;
 }
 
+
 @keyframes pisca {
     0%, 100% {
         opacity: 1;
@@ -36,6 +37,7 @@ span#span-animation::after{
     50% {
         opacity: 0;
     }
+    
 }
 
 
