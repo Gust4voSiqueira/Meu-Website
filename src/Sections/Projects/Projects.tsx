@@ -5,16 +5,16 @@ const databaseProducts = [
     {
         title: 'Burger Lets',
         description: 'O Burger Lets é um projeto desenvolvido para uma hamburgueria da minha cidade.',
-        tecnologies: ['ReactJs', 'NodeJS'],
+        tecnologies: ['ReactJs', 'SpringBoot'],
         website: true,
-        link: 'https://burger-lets.vercel.app'
+        link: 'https://burgerlets.vercel.app'
     },
     {
         title: 'Igreja IPCC',
         description: 'O projeto Igreja IPCC é um website desenvolvido para a Igreja que eu frequento.',
         tecnologies: ['ReactJs', 'SpringBoot'],
         website: true,
-        link: 'https://igreja-ipcc.vercel.app'
+        link: 'https://igrejaipcc.vercel.app'
     },
     {
         title: 'Tasks',
