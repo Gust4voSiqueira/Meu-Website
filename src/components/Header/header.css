@@ -56,13 +56,17 @@ img#main-icon{
 }
 
 @media(max-width: 700px) {
+    h1{
+        font-size: 1.3rem;
+    }
+    
     div#header-container{
         padding: 1rem 1.5rem;
         height: 100px;
     }
     #menu-mobile{
         position: fixed;
-        left: 75%;
+        left: 88%;
         display: flex;
         width: 100px;
     }
@@ -72,8 +76,8 @@ img#main-icon{
         transition: all 0.3s linear;
     }
     span#main-mobile-barra{
-        width: 50%;
-        height: 0.2rem;
+        width: 32px;
+        height: 2px;
         top: 40px;
         left: 14px;
         position: absolute;
@@ -81,8 +85,8 @@ img#main-icon{
     }
     span#main-mobile-barra::before{
         content: '';
-        width: 50px;
-        height:0.2rem;
+        width: 32px;
+        height: 2px;
         bottom: -13px;
         position: absolute;
         background-color: #fff;
@@ -91,8 +95,8 @@ img#main-icon{
     }
     span#main-mobile-barra::after{
         content: '';
-        width: 50px;
-        height: 0.2rem;
+        width: 32px;
+        height: 2px;
         top: -13px;
         position: absolute;
         background-color: #fff;
