@@ -66,7 +66,7 @@ img#main-icon{
     }
     #menu-mobile{
         position: fixed;
-        left: 88%;
+        left: 85%;
         display: flex;
         width: 100px;
     }
