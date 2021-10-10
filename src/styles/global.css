@@ -19,3 +19,11 @@ body{
 
     font-size: 16px;
 }
+
+
+body::-webkit-scrollbar {
+    background-color: #181818;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #6610f2;
+}
