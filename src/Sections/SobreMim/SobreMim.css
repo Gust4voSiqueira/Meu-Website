@@ -7,7 +7,7 @@ div#sobreMim-container{
     padding: 2rem 0;
 }
 div#sobreMim-container section span{
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 div#sobreMim-container section {
@@ -16,10 +16,9 @@ div#sobreMim-container section {
 }
 
 div#sobreMim-container img#image-sobre-mim{
-    margin: auto;
-    width: 26%;
-
-    border-radius: 500px;
+    margin: 120px;
+    margin-left: 150px;
+    width: 23%;
 }
 
 div#sobreMim-container section div.button-div-sobremim{

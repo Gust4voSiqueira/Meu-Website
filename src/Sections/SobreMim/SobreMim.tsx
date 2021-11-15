@@ -3,11 +3,12 @@ import './SobreMim.css'
 
 import Linkedin from '../../Assets/linkedin-icon.png'
 import Github from '../../Assets/github-icon.png'
+import imagePerfil from '../../Assets/ilustracao-sobremim.png'
 
 export function SobreMim() {
     return (
         <div id="sobreMim-container">
-            <img id='image-sobre-mim' src="https://avatars.githubusercontent.com/u/79036409?v=4" alt="" />
+            <img id='image-sobre-mim' src={imagePerfil} alt="" />
             <section>
                 <h1>Sobre Mim</h1>
                 <span>
