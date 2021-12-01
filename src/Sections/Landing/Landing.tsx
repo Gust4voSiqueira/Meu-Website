@@ -28,7 +28,7 @@ export function Landing() {
             <div id="landing-container">
                 <section>
                     <span id='span-animation'>Olá, eu sou o <h1>Gustavo Siqueira</h1></span>
-                    <a className='a-button' href="https://www.instagram.com/gustavo_siqueira3/"><Button image={instagram} title='Instagram' /></a>
+                    <a className='a-button' href="https://www.instagram.com/gustavo.siqueira8/"><Button image={instagram} title='Instagram' /></a>
                 </section>
 
                 <img id='capa-image' src={capa} alt="landing-image" />
