@@ -30,6 +30,13 @@ const databaseProducts = [
         website: true,
         link: 'https://dt-money-gustavo.vercel.app'
     },
+    {
+        title: 'Weather',
+        description: 'Weather é uma aplicação de busca metereológica.',
+        tecnologies: ['ReactJs'],
+        website: true,
+        link: 'https://weather-gustavo.vercel.app/'
+    },
 
 ]
 
