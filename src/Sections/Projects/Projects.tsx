@@ -1,4 +1,5 @@
 import { ProjectsCard } from '../../components/ProjectsCard/ProjectsCard'
+import { useThemeGlobal } from '../../context/themeContext'
 import './projects.css'
 
 const databaseProducts = [
@@ -41,10 +42,12 @@ const databaseProducts = [
 ]
 
 export function Projects() {
+    const [ useTheme ] = useThemeGlobal()
+
     return (
         <>
-            <h1 className='projects-title' id="projects-title">Projetos</h1>
-            <div className="projects-container">
+            <h1 className={`projects-title projects-${useTheme}`} id="projects-title">Projetos</h1>
+            <div className={`projects-container projects-${useTheme}`}>
 
                 {databaseProducts.map((databaseProducts) => {
                     return <ProjectsCard

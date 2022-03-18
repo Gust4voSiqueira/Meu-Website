@@ -4,10 +4,13 @@ import './SobreMim.css'
 import Linkedin from '../../Assets/linkedin-icon.png'
 import Github from '../../Assets/github-icon.png'
 import imagePerfil from '../../Assets/ilustracao-sobremim.png'
+import { useThemeGlobal } from '../../context/themeContext'
 
 export function SobreMim() {
+    const [ useTheme ] = useThemeGlobal()
+
     return (
-        <div className="sobreMim-container" id="sobreMim-container">
+        <div className={`sobreMim-container SobreMim-${useTheme}`} id="sobreMim-container">
             <img className='image-sobre-mim' src={imagePerfil} alt="imageSobreMim" />
             <section>
                 <h1>Sobre Mim</h1>

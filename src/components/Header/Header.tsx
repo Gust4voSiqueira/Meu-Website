@@ -2,13 +2,26 @@ import './header.css'
 
 
 import { useState } from 'react'
+import { useThemeGlobal } from '../../context/themeContext'
+
+import { MdOutlineLightMode } from 'react-icons/md'
+import { MdOutlineDarkMode } from 'react-icons/md'
 
 export function Header() {
+    const [ useTheme, setUseTheme ] = useThemeGlobal()
     const [main, setMain] = useState(false)
+
+    function handleReplacementThemeDark() {
+        setUseTheme("Dark")
+    }
+
+    function handleReplacementThemeLight() {
+        setUseTheme("Light")
+    }
 
     return (
         <>
-            <div className="header-container">
+            <div className={`header-container Header-${useTheme}`}>
                 <h1><a href="#landing-container">Portifólio</a></h1>
 
                 <nav className='main-desktop'>
@@ -16,6 +29,8 @@ export function Header() {
                     <li><a href="#projects-title">Projetos</a></li>
                     <li><a href="#conhecimentos-container">Conhecimentos</a></li>
                     <li><a href="#contact-container">Contato</a></li>
+                    <button className="option-Light" onClick={handleReplacementThemeLight}><MdOutlineLightMode /></button>
+                    <button className="option-Dark" onClick={handleReplacementThemeDark}><MdOutlineDarkMode /></button>
                 </nav>
             </div>
 
@@ -30,6 +45,8 @@ export function Header() {
                     <li><a href="#projects-title">Projetos</a></li>
                     <li><a href="#conhecimentos-container">Conhecimentos</a></li>
                     <li><a href="#contact-container">Contato</a></li>
+                    <button className="option-Light" onClick={handleReplacementThemeLight}><MdOutlineLightMode /></button>
+                    <button className="option-Dark" onClick={handleReplacementThemeDark}><MdOutlineDarkMode /></button>
                 </nav>
             )}
 

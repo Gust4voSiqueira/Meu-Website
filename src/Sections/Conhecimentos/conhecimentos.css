@@ -2,8 +2,6 @@ div.conhecimentos-container{
     display: flex;
     justify-content: space-between;
 
-    background: var(--Grey-400);
-
     padding: 3.5rem 80px;
     height: 500px;
 }
@@ -50,6 +48,17 @@ div.conhecimentosCard-container img{
     margin: 2.3rem auto;
     width: 60%;
 }
+
+.conhecimentos-Dark {
+    background: var(--Grey-400);
+    color: var(--white);
+}
+
+.conhecimentos-Light {
+    background: var(--Grey-100);
+    color: var(--Grey-800);
+}
+
 
 @media(max-width: 1080px) {
     div.conhecimentos-container{

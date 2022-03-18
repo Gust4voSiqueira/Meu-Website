@@ -7,6 +7,7 @@ import ReactIcon from '../../Assets/react-icon.png'
 import JavaIcon from '../../Assets/java-icon.png'
 import SassIcon from '../../Assets/sass-icon.png'
 import { useState } from 'react'
+import { useThemeGlobal } from '../../context/themeContext'
 
 const database = [
     {
@@ -37,10 +38,11 @@ const database = [
 
 
 export function Conhecimentos() {
+    const [ useTheme ] = useThemeGlobal()
     const [conhecimentos, setConhecimentos] = useState('')
 
     return (
-        <div className="conhecimentos-container" id="conhecimentos-container">
+        <div className={`conhecimentos-container conhecimentos-${useTheme}`} id="conhecimentos-container">
             <section className="text">
                 <h1>Conhecimentos</h1>
                 <p>Confira aqui o que tenho estudado!</p>
@@ -52,7 +54,7 @@ export function Conhecimentos() {
                 {database.map((database) => {
                     return (
                         <div className="conhecimentosCard-container" onMouseOut={() => setConhecimentos(database.description)}>
-                            <img src={database.image} alt="" />
+                            <img src={database.image} alt="Tecnologias" />
                         </div>
                     )
                 })}

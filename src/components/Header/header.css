@@ -4,15 +4,15 @@ div.header-container{
     width: 100%;
     justify-content: space-between;
     padding: 1.3rem 5rem;
-
-    background: var(--Grey-400);
+    
+    z-index: 1;
 }
 
 h1{
     font-size: 1.6rem;
 }
 
-a {
+a { 
     text-decoration: none;
     color: var(--white);
 }
@@ -43,6 +43,34 @@ img.main-icon{
     display: none;
 }
 
+.Header-Light {
+    background-color: var(--Blue-300);
+    color: var(--Grey-800);
+}
+
+.Header-Dark {
+    background-color: var(--Grey-400);
+    color: var(--white);
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Fira Code", "Montserrat", 'san-serif';
+}
+
+button.option-Light {
+    text-decoration: none;
+    background-color: var(--Grey-100);
+}
+
+button.option-Dark {
+    text-decoration: none;
+    background-color: var(--Grey-800);
+    color: var(--white);
+}
+
+
 @media(max-width: 1080px) {
     img.main-icon{
         display: none;
@@ -67,6 +95,7 @@ img.main-icon{
     div.header-container{
         padding: 1rem 1.5rem;
         height: 100px;
+        z-index: 0;
     }
     .menu-mobile{
         position: fixed;
@@ -131,7 +160,7 @@ img.main-icon{
     
     nav.main-mobile{
         width: 50%;
-        height: 60vh;
+        height: 80vh;
 
         display: flex;
         flex-direction: column;

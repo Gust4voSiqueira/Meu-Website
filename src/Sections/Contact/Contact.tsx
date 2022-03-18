@@ -6,10 +6,13 @@ import MailIcon from '../../Assets/gmail-icon.png'
 import GithubIcon from '../../Assets/github-icon.png'
 import InstagramIcon from '../../Assets/instagram-icon.png'
 import WhatsappIcon from '../../Assets/whatsapp-icon.png'
+import { useThemeGlobal } from '../../context/themeContext'
 
 export function Contact() {
+    const [ useTheme ] = useThemeGlobal()
+
     return (
-        <div className="contact-container" id="contact-container">
+        <div className={`contact-container contact-${useTheme}`} id="contact-container">
             <h1>Contato</h1>
             <span className='message-contact'>Se você deseja bater um papo comigo, não hesite em entrar em contato.</span>
 

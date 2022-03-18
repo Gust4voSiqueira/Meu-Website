@@ -3,7 +3,6 @@ div.sobreMim-container{
     justify-content: space-between;
 
     line-height: 35px;
-    background: var(--Grey-400);
     padding: 2rem 0;
 }
 div.sobreMim-container section span{
@@ -31,6 +30,16 @@ div.sobreMim-container section div.button-div-sobremim a{
     width: 100%;
     margin-top: 2rem;
 }
+
+.SobreMim-Dark {
+    background-color: var(--Grey-400);
+    color: var(--white);
+}
+
+.SobreMim-Light {
+    background-color: var(--Grey-100);
+}
+
 
 @media(max-width: 1080px) {
     div.sobreMim-container img.image-sobre-mim{

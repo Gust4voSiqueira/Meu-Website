@@ -2,7 +2,6 @@ div.landing-container{
     display: flex;
     justify-content: space-between;
 
-    background: var(--Grey-800);
     height: 100vh;
 }
 
@@ -51,7 +50,7 @@ a.a-button div.button-container{
 
 
 .planet-space {
-    height: 500px;
+    height: 400px;
     display: flex;
     margin: auto 250px auto 0;
     flex-direction: column;
@@ -146,6 +145,17 @@ a.a-button div.button-container{
         transform: translateX(250px);
     }
 }
+
+.Landing-Dark {
+    background-color: var(--Grey-800);
+    color: var(--white);
+}
+
+.Landing-Light {
+    background: var(--white);
+    color: var(--Grey-800);
+}
+
 
 @media(max-width: 1080px) {
 

@@ -1,6 +1,4 @@
 div.button-container{
-    background: var(--color-button);
-
     display: flex;
     justify-content: space-between;
 
@@ -14,21 +12,32 @@ div.button-container{
     cursor: pointer;
 }
 
-div.button-container:hover {
-    background: var(--color-button-hover);
-}
-
 div.button-container img{
     display: inline-block;
     max-width: 18px;
     height: 18px;
     margin: auto 0;
 
-    background: var(--color-button);
     color: var(--white);
 }
 
 div.button-container p{
     display: inline-block;
     margin: 0 10px;
+}
+
+.button-Light {
+    background: var(--Blue-300);
+}
+
+.button-Light img{
+    background: var(--Blue-300);
+}
+
+.button-Dark {
+    background: var(--color-button);
+}
+
+.button-Dark img{
+    background: var(--color-button);
 }
