@@ -1,4 +1,4 @@
-div#sobreMim-container{
+div.sobreMim-container{
     display: flex;
     justify-content: space-between;
 
@@ -6,47 +6,47 @@ div#sobreMim-container{
     background: var(--Grey-400);
     padding: 2rem 0;
 }
-div#sobreMim-container section span{
+div.sobreMim-container section span{
     font-size: 1rem;
 }
 
-div#sobreMim-container section {
-    padding: 30px 0;
+div.sobreMim-container section {
+    padding: 30px 40px;
     width: 45%;
 }
 
-div#sobreMim-container img#image-sobre-mim{
+div.sobreMim-container img.image-sobre-mim{
     margin: 120px;
-    margin-left: 150px;
+    margin-left: 80px;
     width: 23%;
 }
 
-div#sobreMim-container section div.button-div-sobremim{
+div.sobreMim-container section div.button-div-sobremim{
     display: flex;
     justify-content: space-between;
 }
 
-div#sobreMim-container section div.button-div-sobremim a{
+div.sobreMim-container section div.button-div-sobremim a{
     display: block;
     width: 100%;
     margin-top: 2rem;
 }
 
 @media(max-width: 1080px) {
-    div#sobreMim-container img#image-sobre-mim{
+    div.sobreMim-container img.image-sobre-mim{
         display: none;
     }
 
-    div#sobreMim-container section {
+    div.sobreMim-container section {
         padding: 30px 0;
         width: 100%;
     }
 
-    div#sobreMim-container section div#button-container{
+    div.sobreMim-container section div.button-container{
         margin: 0;
     }
 
-    div#sobreMim-container section div.button-div-sobremim{
+    div.sobreMim-container section div.button-div-sobremim{
         display: block;
         width: 100%;
 
@@ -55,7 +55,7 @@ div#sobreMim-container section div.button-div-sobremim a{
         text-align: center;
     }
 
-    div#sobreMim-container section div.button-div-sobremim a{
+    div.sobreMim-container section div.button-div-sobremim a{
         display: flex;
         margin: 20px auto;
         width: 70%;
@@ -67,21 +67,21 @@ div#sobreMim-container section div.button-div-sobremim a{
 }
 
 @media(max-width: 700px) {
-    div#sobreMim-container img#image-sobre-mim{
+    div.sobreMim-container img.image-sobre-mim{
         display: none;
     }
 
-    div#sobreMim-container section {
+    div.sobreMim-container section {
         padding: 30px 0;
         width: 100%;
     }
 
-    div#sobreMim-container section div#button-container{
+    div.sobreMim-container section div.button-container{
         margin: 0;
         width: 90%;
     }
 
-    div#sobreMim-container section div.button-div-sobremim{
+    div.sobreMim-container section div.button-div-sobremim{
         display: block;
         width: 100%;
 
@@ -91,7 +91,7 @@ div#sobreMim-container section div.button-div-sobremim a{
         text-align: center;
     }
 
-    div#sobreMim-container section div.button-div-sobremim a{
+    div.sobreMim-container section div.button-div-sobremim a{
         display: flex;
         margin: 20px auto;
 

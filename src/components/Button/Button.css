@@ -1,4 +1,4 @@
-div#button-container{
+div.button-container{
     background: var(--color-button);
 
     display: flex;
@@ -7,26 +7,28 @@ div#button-container{
     padding: 0.6rem 1.5rem;
     text-align: center;
     align-items: center;
-    width: 60%;
+    max-width: 150px;
+    height: 40px;
     border-radius: 5px;
 
     cursor: pointer;
 }
 
-div#button-container:hover {
+div.button-container:hover {
     background: var(--color-button-hover);
 }
 
-div#button-container img{
+div.button-container img{
     display: inline-block;
-    width: 15%;
+    max-width: 18px;
+    height: 18px;
     margin: auto 0;
 
     background: var(--color-button);
-    color: white;
+    color: var(--white);
 }
 
-div#button-container p{
+div.button-container p{
     display: inline-block;
     margin: 0 10px;
 }

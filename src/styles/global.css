@@ -8,10 +8,12 @@
 }
 
 :root {
+    --white: #FFF;
     --Grey-400: #202020;
     --Grey-800: #181818;
     --color-button: #6610f2;
     --color-button-hover: #510fbb;
+
 }
 body{
     font-family: "Fira Code", "Montserrat", 'san-serif';

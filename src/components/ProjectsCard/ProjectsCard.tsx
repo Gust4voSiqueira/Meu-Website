@@ -14,11 +14,11 @@ interface ProjectsCardProps {
 
 export function ProjectsCard({ title, description, tecnologies, website, link }: ProjectsCardProps) {
     return (
-        <div id="projectsCard-container">
+        <div className="projectsCard-container">
             <h1>{title}</h1>
             <p className='text-projects'>{description}</p>
 
-            <div id='div-button'><a target="_blank" href={link}><Button image={LinkIcon} title={website ? "Website" : "Github"} /></a></div>
+            <div className='div-button'><a target="_blank" href={link}><Button image={LinkIcon} title={website ? "Website" : "Github"} /></a></div>
 
             {tecnologies.map((tecnologies) => {
                 return <span className='technologies'>{tecnologies}</span>

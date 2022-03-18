@@ -7,8 +7,8 @@ import imagePerfil from '../../Assets/ilustracao-sobremim.png'
 
 export function SobreMim() {
     return (
-        <div id="sobreMim-container">
-            <img id='image-sobre-mim' src={imagePerfil} alt="" />
+        <div className="sobreMim-container" id="sobreMim-container">
+            <img className='image-sobre-mim' src={imagePerfil} alt="image-sobre-mim" />
             <section>
                 <h1>Sobre Mim</h1>
                 <span>

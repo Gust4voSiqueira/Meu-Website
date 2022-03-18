@@ -1,27 +1,23 @@
-div#landing-container{
+div.landing-container{
     display: flex;
     justify-content: space-between;
 
     background: var(--Grey-800);
-}
-
-img#capa-image{
-    margin-bottom: 10rem;
-    width: 45%;
+    height: 100vh;
 }
 
 section{
-    margin: auto 3rem;
+    margin: auto 80px;
 }
 
-span#span-animation{
+span.span-animation{
     display: inline-block;
     margin: auto 0;
     padding: 2.5rem 0;
 
     font-size: 1.2rem;
 }
-span#span-animation::after{    
+span.span-animation::after{    
     content: "|";
     opacity: 1;
     animation: pisca .7s infinite;
@@ -38,29 +34,122 @@ span#span-animation::after{
     
 }
 
-
 span h1{
     font-size: 2rem;
 }
 
 a.a-button{
+    text-decoration: none;
+    color: var(--white);
     margin: 0;
     padding: 0;
-
 }
 
-a.a-button div#button-container{
-    width: 33%;
+a.a-button div.button-container{
+    width: 55%;
 }
 
-a{
-    text-decoration: none;
-    color: #fff;
+
+.planet-space {
+    height: 500px;
+    display: flex;
+    margin: auto 250px auto 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: #a01f1f;
+    box-shadow: inset 5px 5px 0 #811414;
+    position: absolute;
+    border-radius: 100%;
+    top: 50px;
+    left: 60px;
+}
+
+.details::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #a01f1f;
+    box-shadow: inset 5px 5px 0 #811414;
+    position: absolute;
+    border-radius: 100%;
+    bottom: 50px;
+    left: 80px;
+}
+
+.shadow {
+    width: 180px;
+    height: 50px;
+    background-color: #00000042;
+    border-radius: 100%;
+    animation-name: boing;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes boing {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.planet {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 100%;
+    box-shadow: inset -50px -30px 0 #811414;
+    position: relative;
+    overflow: hidden;
+    animation: up-down alternate 1s infinite;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(80px);
+    }
+}
+
+.details {
+    width: 20px;
+    height: 20px;
+    background-color: #a01f1f;
+    box-shadow: inset 5px 5px 0 #811414;
+    border-radius: 100%;
+    position: relative;
+    top: 90px;
+    left: 50px;
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateX(-200px);
+    }
+
+    100% {
+        transform: translateX(250px);
+    }
 }
 
 @media(max-width: 1080px) {
 
-    a.a-button div#button-container{
+    a.a-button div.button-container{
         width: 70%;
     }
     
@@ -68,11 +157,11 @@ a{
 
 @media(max-width: 700px) {
 
-    img#capa-image{
+    .planet-space{
         display: none;
     }
 
-    div#landing-container{
+    div.landing-container{
         display: flex;
 
         align-items: center;
@@ -83,7 +172,7 @@ a{
         height: 100vh;
     }
 
-    span#span-animation{
+    span.span-animation{
         padding: 2.5rem 0;
         margin-top: 5rem;
     
@@ -94,7 +183,7 @@ a{
         font-size: 1.5rem;
     }
 
-    a.a-button div#button-container{
+    a.a-button div.button-container{
         width: 50%;
         margin: 0 auto;
     }

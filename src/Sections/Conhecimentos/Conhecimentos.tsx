@@ -40,18 +40,18 @@ export function Conhecimentos() {
     const [conhecimentos, setConhecimentos] = useState('')
 
     return (
-        <div id="conhecimentos-container">
-            <section id="text">
+        <div className="conhecimentos-container" id="conhecimentos-container">
+            <section className="text">
                 <h1>Conhecimentos</h1>
                 <p>Confira aqui o que tenho estudado!</p>
                 <br />
-                <p id='message-cursor'>*Passe o cursor para conferir mais detalhes*</p>
+                <p className='message-cursor'>*Passe o cursor para conferir mais detalhes*</p>
                 {conhecimentos ? (<p>{conhecimentos}</p>) : (<p></p>)}
             </section>
-            <section id="cards">
+            <section className="cards">
                 {database.map((database) => {
                     return (
-                        <div id="conhecimentosCard-container" onMouseOut={() => setConhecimentos(database.description)}>
+                        <div className="conhecimentosCard-container" onMouseOut={() => setConhecimentos(database.description)}>
                             <img src={database.image} alt="" />
                         </div>
                     )

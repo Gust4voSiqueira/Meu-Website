@@ -1,18 +1,24 @@
-div#header-container{
+div.header-container{
     display: flex;
     position: fixed;
     width: 100%;
     justify-content: space-between;
-    padding: 1.3rem 2.5rem;
+    padding: 1.3rem 5rem;
 
     background: var(--Grey-400);
+    z-index: 2;
 }
 
 h1{
     font-size: 1.6rem;
 }
 
-nav#main-desktop li{
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav.main-desktop li{
     display: inline-block;
     list-style: none;
     margin: auto 2.2rem;
@@ -22,11 +28,11 @@ nav#main-desktop li{
     cursor: pointer;
 }
 
-nav#main-desktop li:hover{
+nav.main-desktop li:hover{
     border-bottom: 2px solid var(--color-button);
 }
 
-nav#main-mobile{
+nav.main-mobile{
     display: none;       
 }
 
@@ -34,15 +40,15 @@ img{
     display: block;
 }
 
-img#main-icon{
+img.main-icon{
     display: none;
 }
 
 @media(max-width: 1080px) {
-    img#main-icon{
+    img.main-icon{
         display: none;
     }
-    nav#main-desktop li{
+    nav.main-desktop li{
         display: inline-block;
         list-style: none;
         margin: auto 0.7rem;
@@ -58,22 +64,23 @@ img#main-icon{
         font-size: 1.3rem;
     }
     
-    div#header-container{
+    div.header-container{
         padding: 1rem 1.5rem;
         height: 100px;
     }
-    #menu-mobile{
+    .menu-mobile{
         position: fixed;
         left: 85%;
         display: flex;
         width: 100px;
     }
-    #menu-mobile label{
+    .menu-mobile label{
         width: 100%;
         position: absolute;
         transition: all 0.3s linear;
     }
-    span#main-mobile-barra{
+    span.main-mobile-barra{
+        z-index: 4;
         width: 32px;
         height: 2px;
         top: 40px;
@@ -81,49 +88,49 @@ img#main-icon{
         position: absolute;
         background-color: white;
     }
-    span#main-mobile-barra::before{
+    span.main-mobile-barra::before{
         content: '';
         width: 32px;
         height: 2px;
         bottom: -13px;
         position: absolute;
-        background-color: #fff;
+        background-color: var(--white);
 
         transition: all 0.3s linear;
     }
-    span#main-mobile-barra::after{
+    span.main-mobile-barra::after{
         content: '';
         width: 32px;
         height: 2px;
         top: -13px;
         position: absolute;
-        background-color: #fff;
+        background-color: var(--white);
 
         transition: all 0.3s linear;
     }
-    #check{
+    .check{
         position: absolute;
         z-index: 1;
         width: 100%;
         height: 80px;
         opacity: 0;
     }
-    #check:checked ~ span {
+    .check:checked ~ span {
         background-color: transparent;
     }
-    #check:checked ~ span::after {
+    .check:checked ~ span::after {
         transform: translate(0px, 13px) rotate(45deg);
     }
 
-    #check:checked ~ span::before {
+    .check:checked ~ span::before {
         transform: translate(0px, -13px) rotate(-45deg);
     }
 
-    #check:checked ~ span#span-animation::after{
+    .check:checked ~ span.span-animation::after{
        content: '';
     }
     
-    nav#main-mobile{
+    nav.main-mobile{
         width: 40%;
         height: 100vh;
 
@@ -141,11 +148,11 @@ img#main-icon{
 
     }
 
-    nav#main-mobile li{
+    nav.main-mobile li{
         text-align: right;
         margin: 3rem 2rem;
     }
-    nav#main-desktop{
+    nav.main-desktop{
         display: none;
     }
 }

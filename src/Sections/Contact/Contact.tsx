@@ -9,12 +9,12 @@ import WhatsappIcon from '../../Assets/whatsapp-icon.png'
 
 export function Contact() {
     return (
-        <div id="contact-container">
+        <div className="contact-container" id="contact-container">
             <h1>Contato</h1>
-            <span id='message-contact'>Se você deseja bater um papo comigo, não hesite em entrar em contato.</span>
+            <span className='message-contact'>Se você deseja bater um papo comigo, não hesite em entrar em contato.</span>
 
-            <span id='email'><img src={MailIcon} alt="" /> gustavosiqueira082@gmail.com</span>
-            <div id='contact-cards'>
+            <span className='email'><img src={MailIcon} alt="e-mail" /> gustavosiqueira082@gmail.com</span>
+            <div className='contact-cards'>
                 <a href="https://www.linkedin.com/in/gustavo-siqueira00/"><Button image={LinkedinIcon} title='Linkedin' /></a>
                 <a href="https://github.com/Gust4voSiqueira"><Button image={GithubIcon} title='Github' /></a>
                 <a href="https://www.instagram.com/gustavo.siqueira8/"><Button image={InstagramIcon} title='Instagram' /></a>

@@ -2,7 +2,6 @@
 import { Button } from '../../components/Button/Button'
 
 import instagram from '../../Assets/instagram-icon.png'
-import capa from '../../Assets/capa-landing.png'
 
 import './Landing.css'
 import { useEffect } from 'react'
@@ -10,7 +9,7 @@ import { useEffect } from 'react'
 
 export function Landing() {
 
-    let textoArray = " Seja Bem-Vindo ao meu Website!"
+    const textoArray = " Seja Bem-Vindo ao meu Website!"
 
     const array = textoArray.split('')
 
@@ -25,13 +24,23 @@ export function Landing() {
 
     return (
         <>
-            <div id="landing-container">
+            <div className="landing-container" id="landing-container">
                 <section>
-                    <span id='span-animation'>Olá, eu sou o <h1>Gustavo Siqueira</h1></span>
-                    <a className='a-button' href="https://www.instagram.com/gustavo.siqueira8/"><Button image={instagram} title='Instagram' /></a>
+                    <span className='span-animation' id='span-animation'>Olá, eu sou o <h1>Gustavo Siqueira</h1></span>
+                    <a className='a-button' href="https://www.instagram.com/gustavo.siqueira8/">
+                        <Button image={instagram} title='Instagram' />
+                    </a>
                 </section>
 
-                <img id='capa-image' src={capa} alt="landing-image" />
+                <div className="planet-space">
+                    <div className="planet">
+                        <div className="details"></div>
+                    </div>
+                    <div className="shadow">
+
+                    </div>
+                </div>
+
             </div>
         </>
     )

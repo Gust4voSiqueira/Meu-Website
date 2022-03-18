@@ -8,10 +8,10 @@ export function Header() {
 
     return (
         <>
-            <div id="header-container">
+            <div className="header-container">
                 <h1><a href="#landing-container">Portifólio</a></h1>
 
-                <nav id='main-desktop'>
+                <nav className='main-desktop'>
                     <li><a href="#sobreMim-container">Sobre Mim</a></li>
                     <li><a href="#projects-title">Projetos</a></li>
                     <li><a href="#conhecimentos-container">Conhecimentos</a></li>
@@ -19,13 +19,13 @@ export function Header() {
                 </nav>
             </div>
 
-            <div id="menu-mobile" onClick={() => setMain(!main)}>
-                <input type="checkbox" name="" id="check" />
+            <div className="menu-mobile" onClick={() => setMain(!main)}>
+                <input type="checkbox" name="" className="check" />
                 <label htmlFor="check"></label>
-                <span id='main-mobile-barra'></span>
+                <span className='main-mobile-barra'></span>
             </div>
             {main && (
-                <nav id='main-mobile'>
+                <nav className='main-mobile'>
                     <li><a href="#sobreMim-container">Sobre Mim</a></li>
                     <li><a href="#projects-title">Projetos</a></li>
                     <li><a href="#conhecimentos-container">Conhecimentos</a></li>

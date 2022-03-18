@@ -1,19 +1,19 @@
-div#projects-container{
+div.projects-container{
     background: var(--Grey-800);
-    padding-bottom: 4rem;
+    padding: 0 0 4rem 3rem;
 
     display: block;
     justify-content: center;
     align-items: center;
 }
-h1#projects-title{
+h1.projects-title{
     display: block;
     background: var(--Grey-800);
-    padding: 2rem 2rem;
+    padding: 2rem 5rem;
     font-size: 2rem;
 }
 @media(max-width: 1080px) {
-    div#projects-container{
+    div.projects-container{
         background: var(--Grey-800);
         padding-bottom: 4rem;
     
@@ -22,7 +22,7 @@ h1#projects-title{
         align-items: center;
     }
 
-    h1#projects-title{
+    h1.projects-title{
         padding: 2rem 2rem;
     }
 }

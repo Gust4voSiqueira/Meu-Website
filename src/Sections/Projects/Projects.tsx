@@ -18,7 +18,7 @@ const databaseProducts = [
     },
     {
         title: 'Tasks',
-        description: 'Tasks é um gerenciador de tarefas simples.',
+        description: 'Tasks é um gerenciador de tarefas simples desenvolvido através de tutoriais.',
         tecnologies: ['ReactJs'],
         website: false,
         link: 'https://github.com/Gust4voSiqueira/Tasks'
@@ -32,7 +32,7 @@ const databaseProducts = [
     },
     {
         title: 'Weather',
-        description: 'Weather é uma aplicação de busca metereológica.',
+        description: 'Weather é uma aplicação de busca metereológica que consome a API Weather API.',
         tecnologies: ['ReactJs'],
         website: true,
         link: 'https://weather-gustavo.vercel.app/'
@@ -43,8 +43,8 @@ const databaseProducts = [
 export function Projects() {
     return (
         <>
-            <h1 id='projects-title'>Projetos</h1>
-            <div id="projects-container">
+            <h1 className='projects-title' id="projects-title">Projetos</h1>
+            <div className="projects-container">
 
                 {databaseProducts.map((databaseProducts) => {
                     return <ProjectsCard
