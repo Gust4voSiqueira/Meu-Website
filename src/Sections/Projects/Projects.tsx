@@ -38,7 +38,13 @@ const databaseProducts = [
         website: true,
         link: 'https://weather-gustavo.vercel.app/'
     },
-
+    {
+        title: 'hangman game',
+        description: 'Hangman game é um jogo da forca desenvolvido com ReactJS.',
+        tecnologies: ['ReactJs'],
+        website: true,
+        link: 'https://hangman-game-tan.vercel.app/'
+    },
 ]
 
 export function Projects() {

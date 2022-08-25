@@ -1,5 +1,4 @@
 div.projectsCard-container{
-    display: inline-block;
     width: 30%;
     height: 300px;
 
@@ -45,7 +44,7 @@ div.div-button div.button-container{
 }
 
 .technologies-Dark {
-    background: var(--Grey-400);
+    background: var(--Grey-800);
     color: var(--white);
 }
 
