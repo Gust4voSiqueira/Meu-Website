@@ -26,7 +26,7 @@ const databaseProducts = [
     },
     {
         title: 'dtMoney',
-        description: 'dtMoney é um gerenciador de finanças desenvolvido durante o programa de aceleração de carreira (Ignite).',
+        description: 'dtMoney é um gerenciador de finanças desenvolvido durante o programa Ignite da Rocketseat.',
         tecnologies: ['ReactJs'],
         website: true,
         link: 'https://dt-money-gustavo.vercel.app'
@@ -44,6 +44,13 @@ const databaseProducts = [
         tecnologies: ['ReactJs'],
         website: true,
         link: 'https://hangman-game-tan.vercel.app/'
+    },
+    {
+        title: 'To-do List',
+        description: 'ToDo List é um gerenciador de tarefas desenvolvido durante o programa Ignite da Rocketseat.',
+        tecnologies: ['ReactJs'],
+        website: true,
+        link: 'https://todo-ignite-rocket.vercel.app/'
     },
 ]
 
