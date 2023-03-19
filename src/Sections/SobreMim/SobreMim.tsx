@@ -15,7 +15,7 @@ export function SobreMim() {
             <section>
                 <h1>Sobre Mim</h1>
                 <span>
-                    Meu Nome é Gustavo, tenho 20 anos, moro no Brasil, especificamente em Luziânia-GO.
+                    Meu Nome é Gustavo, tenho 22 anos, moro no Brasil, especificamente em Luziânia-GO.
                     Atualmente estou estudando em uma universidade.
                     Também tenho estudado bastante sozinho para aprender novas tecnologias.
                     <br /><br />Iniciei meus estudos sobre programação em 2019.
@@ -24,8 +24,9 @@ export function SobreMim() {
                     resultados que as horas dedicadas aos estudos trazem.
                 </span>
                 <div className="button-div-sobremim">
-                    <a href="https://www.linkedin.com/in/gustavo-siqueira00/"><Button image={Linkedin} title='Linkedin' /></a>
-                    <a href="https://github.com/Gust4voSiqueira"><Button image={Github} title='Github' /></a>
+                        <a href="https://www.linkedin.com/in/gustavo-siqueira00/"><Button image={Linkedin} title='Linkedin' /></a>
+                    
+                        <a href="https://github.com/Gust4voSiqueira"><Button image={Github} title='Github' /></a>
                 </div>
             </section>
         </div>

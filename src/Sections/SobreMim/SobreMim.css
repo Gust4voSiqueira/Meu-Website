@@ -22,12 +22,11 @@ div.sobreMim-container img.image-sobre-mim{
 
 div.sobreMim-container section div.button-div-sobremim{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 div.sobreMim-container section div.button-div-sobremim a{
-    display: block;
-    width: 100%;
+    width: 150px;
     margin-top: 2rem;
 }
 
